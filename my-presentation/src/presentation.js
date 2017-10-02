@@ -5,6 +5,7 @@ import React from "react";
 import {
   BlockQuote,
   Cite,
+  ComponentPlayground,
   Deck,
   Heading,
   ListItem,
@@ -22,13 +23,12 @@ require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
 const theme = createTheme({
-  primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
-  quartenary: "#CECECE"
+	primary: "#042B35",
+	secondary: "#D2A03E",
+	tertiary: "#FD853D",
+	quartenary: "#A7A7A7",
 }, {
-  primary: "Montserrat",
-  secondary: "Helvetica"
+	primary: "Menlo"
 });
 
 export default class Presentation extends React.Component {
@@ -37,29 +37,31 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            React 16.0
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+            some things you might wanna know
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>The things</Heading>
+          <List>
+            <ListItem>Fragments</ListItem>
+            <ListItem>Error Boundaries</ListItem>
+            <ListItem>Portals</ListItem>
+            <ListItem>Support for custom DOM attributes</ListItem>
+            <ListItem>Improved server-side rendering</ListItem>
+            <ListItem>Reduced file size</ListItem>
+            <ListItem>License</ListItem>
+            <ListItem>Fiber</ListItem>
+            <ListItem>Depcrecations</ListItem>
+            <ListItem>An upgrading example...</ListItem>
+          </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          <ComponentPlayground
+              theme="dark"
+            />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
