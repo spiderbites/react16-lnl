@@ -1,13 +1,15 @@
 {
-  "name": "my-presentation",
+  "name": "prezi",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "spectacle-scripts": "1.0.15"
+    "react-scripts": "1.0.14"
   },
   "dependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-live": "^1.7.1",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
