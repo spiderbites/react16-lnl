@@ -26,17 +26,17 @@ class App extends React.Component {
               <li><Link to="/fragments">Fragments</Link></li>
               <li><Link to="/error">Error Boundaries</Link> </li>
               <li><Link to="/portals">Portals</Link></li>
-              <li><Link to="/support">Support for custom DOM attributes</Link></li>
+              {/* <li><Link to="/domattrs">Support for custom DOM attributes</Link></li>
               <li><Link to="/ssr">Improved server-side rendering</Link></li>
               <li><Link to="/filesize">Reduced file size</Link></li>
               <li><Link to="/license">License</Link></li>
               <li><Link to="/fiber">Fiber</Link></li>
               <li><Link to="/deprecations">Deprecations</Link></li>
-              <li><Link to="/upgrading">An upgrading example...</Link></li>
+              <li><Link to="/upgrading">An upgrading example...</Link></li> */}
             </ul>
 
             <div className='body'>
-              <Route exact path="/" render={() => <h4>react 16 🎂 </h4>} />
+              <Route exact path="/" render={() => <h4>react 16 <span role='img' aria-label='Cake'>🎂</span> </h4>} />
               <Route path="/fragments" component={Fragments} />
               <Route path="/error" component={ErrorBoundary} />
               <Route path="/portals" component={Portal} />

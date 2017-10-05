@@ -1,0 +1,10 @@
+React used to spit out some real funky errors
+
+# love this one!
+"Cannot read property 'getHostNode' of null"
+
+# a classic
+"TypeError: Cannot read property '_currentElement' of null"
+
+# (personal fave)
+Error: performUpdateIfNecessary: Unexpected batch number (current 36, pending 31)(...)

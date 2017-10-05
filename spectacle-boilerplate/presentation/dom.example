@@ -1,0 +1,7 @@
+# React attributes are camelCased, because javaScript
+# In React 15 if you did this:
+<div class='beautiful' />
+# In would wind up like this:
+<div />
+# Now they get passed through, but React gives you a warning...
+"Warning: Invalid DOM property `class`. Did you mean `className`?"
