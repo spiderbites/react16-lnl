@@ -70,7 +70,7 @@ export default class Presentation extends React.Component {
             <ListItem>Complete re-write of the core rendering engine</ListItem>
             <ListItem>Maintained almost total compatiblity with previous API</ListItem>
             <ListItem>New engine enables async rendering for better "perceived performance"</ListItem>
-            <ListItem>But most of those improvements </ListItem>
+            <ListItem>But most of those performance improvements won't be implemented in production until future releases. (But the groundwork is there.)</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="quartenary">
@@ -88,7 +88,7 @@ export default class Presentation extends React.Component {
           <Heading size={3} lineHeight={1} textColor="secondary">
             Package size
           </Heading>
-          <Text textColor="primary">25% smaller bundle size</Text>
+          <Text textColor="primary">It's smaller!</Text>
           <CodePane lang="bash" source={size} />
         </Slide>
         <Slide transition={["fade"]} bgColor="quartenary">
@@ -97,16 +97,17 @@ export default class Presentation extends React.Component {
           </Heading>
           <img src={propTypes} />
           <Text textColor="primary">Use react-codemod and jscodeshift to auto convert your code!</Text>
+          <a href='https://github.com/reactjs/react-codemod#react-proptypes-to-prop-types'>https://github.com/reactjs/react-codemod#react-proptypes-to-prop-types</a>
         </Slide>
         <Slide transition={["fade"]} textColor="primary">
-          <Text textColor="secondary">New features: support for custom DOM attributes</Text>
+          <Text textColor="secondary">New feature: support for custom DOM attributes</Text>
           <br />
+          <CodePane lang="bash" source={dom} />
           <Text textColor="secondary">2 reasons...</Text>
           <List ordered textColor="tertiary">
             <ListItem padding="20" textSize="20">Passing custom attributes e.g. (some random example i found) node-webkit supports a custom attribute "nwdirectory" on &lt; input type="file"/ &gt; s, that allow you to select folders.  Previously React would strip this, need a hacky workaround.</ListItem>
             <ListItem padding="20" textSize="20">Reduced bundle size by shrinking attribute whitelist</ListItem>
           </List>
-          <CodePane lang="bash" source={dom} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Text textColor="primary">Error Boundaries!</Text>

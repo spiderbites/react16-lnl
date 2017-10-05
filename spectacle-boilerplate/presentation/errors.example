@@ -1,4 +1,4 @@
-React used to spit out some real funky errors
+React used to spit out some real funky runtime errors
 
 # love this one!
 "Cannot read property 'getHostNode' of null"
